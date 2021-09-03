@@ -1,8 +1,16 @@
-.photo-profile{
- width: 150px;
- object-fit: cover;
- border-radius: 50%;
+.photo-profile {
+  width: 120px;
+  height: 120px;
+
+  padding: 10px;
+
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  background-color: green;
+
+  object-fit: cover;
+  object-fit: top;
 }
-.footer-bg{
+.footer-bg {
   background-color: black;
 }
