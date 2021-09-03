@@ -1,0 +1,8 @@
+.photo-profile{
+ width: 150px;
+ object-fit: cover;
+ border-radius: 50%;
+}
+.footer-bg{
+  background-color: black;
+}
