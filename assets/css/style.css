@@ -1,16 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+.card-container {
+  --main-color: dodgerblue;
+  text-align: center;
+}
+.title-container {
+  color: var(--main-color);
+}
+.card-wrraper {
+  display: inline-block;
+  --img-size: 100px;
+  min-width: calc(var(--img-size) * 2);
+  width: 100%; /* от ширины родителя */
+  max-width: calc(var(--img-size) * 3);
+  border: 1px solid var(--main-color);
+  margin: 15px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.header-bg {
+  height: calc(1 * var(--img-size));
+  background-color: var(--main-color);
+}
 .photo-profile {
-  width: 120px;
-  height: 120px;
-
-  padding: 10px;
-
-  border-radius: 50%;
+  width: var(--img-size);
+  height: var(--img-size);
+  margin-top: calc(var(--img-size) / 2 * -1);
+  margin-bottom: 10px;
+  padding: 5px;
   border: 1px solid #aaa;
-  background-color: green;
+  border-radius: 50%;
 
   object-fit: cover;
-  object-fit: top;
+  object-position: top;
+
+  background-color: white;
+}
+.full-name-user {
+  margin: 0 auto;
+  max-width: 60%;
+}
+.user-address > img {
+  height: 14px;
+}
+
+.btn-container {
+  margin: 5px 30px;
+  padding: 10px 0;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.btn {
+  max-width: 50%;
+  padding: 0.3em 0.5em;
+  border: none;
+  border-radius: 3px;
+
+  color: white;
+  text-transform: capitalize;
+}
+.follow-bg {
+  background-color: forestgreen;
+}
+.main-bg {
+  background-color: var(--main-color);
+}
+.text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-text {
+  padding: 10px 30px;
+  font-size: 0.9em;
+  line-height: 1.5em;
 }
 .footer-bg {
-  background-color: black;
+  height: calc(var(--img-size) * 0.5);
+  padding-top: calc(var(--img-size) * 0.15);
 }
